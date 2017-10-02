@@ -1,0 +1,94 @@
+SEO Search Engine Optimization
+
+* 做SEO的目的是運用一系列的方法，讓“搜尋引擎”看懂你的網站內容，然後使你的網站排名出現在自然搜尋結果的前面，進而取得高流量。而SEO的最終目標是讓網站排在第一頁，排名越前面越好。
+
+
+SEO排名因素大致可分為四大類別：
+
+* 站內排名因素 (On-page ranking factors)
+	- 內容(的品質）
+	- HTML語法（以協助搜尋引擎判斷內容的相關性）
+	- 網站的架構 (是否易於讓搜尋引擎解讀網站內容)
+* 站外拍排名因素 (Off-page ranking factors)
+
+* 違規 (Violations)
+* 阻隔 (Blocking)
+
+----------------------------------------------------
+HTML Part:
+
+1. title 
+	- 好的標題標籤要符合3個特質：1) 以你的關鍵字研究為基礎，包含了你的關鍵字在其中；2) 據有描述效果的標題；3) 讓搜尋引擎與搜尋用戶都能看懂。
+
+2. meta
+	- <meta name=”description” content=”網頁說明” />
+	- <meta name="keywords" content="關鍵字 1,關鍵字 2">
+	- <meta name="author" content="作者姓名">
+	- <meta name="viewport" content="width=device-width ...">
+3. h1 ~ h3
+	- <h1>的重要性僅次於<title>
+
+4. <img src=”xxx.png” alt=”圖片內容”>
+	- alt: 向搜尋引擎說明這張圖片是什麼用途的
+	- 指定高度寬度
+	- 有意義的檔名
+
+5. <strong>
+	- 可以試著運用<strong>標籤告訴搜尋引擎重點在哪裡，同樣的<strong>標籤與我們畫課本重點一樣，要是你標記的太多太雜，搜尋引擎不知道重點在哪反而失去效果。
+
+6. 使用HTML5 結構標籤(語意標籤) Structural/Semantic Elements
+	- header/aside/nav/article/section/footer
+
+7. Microdata
+	- 可以直接使用Schema.org所定義的標記。 Microdata(微資料)是屬於HTML5的一部分,目的是希望網頁設計師在設計網頁時可以有方法可以標示每個字串的含意,讓搜尋引擎更清楚的了解到每個網頁想要表達的意思，並且簡化了RDFa與Microformats的複雜度。
+	- 將 HTML 標籤加上由 Schema.org 所定義的屬性，e.g.
+		<div itemscope itemtype ="http://schema.org/Movie">
+			<h1 itemprop="name">Avatar</h1>
+				<div itemprop="director" itemscope itemtype="http://schema.org/Person">
+				Director: <span itemprop="name">James Cameron</span> (born <span itemprop="birthDate">August 16, 1954)</span>
+			</div>
+			<span itemprop="genre">Science fiction</span>
+			<a href="../movies/avatar-theatrical-trailer.html" itemprop="trailer">Trailer</a>
+		</div>
+	- 使用 Microdata 最大的好處就是「搜尋引擎可以更了解我們網站內容的意義」。除此之外，實際上 Google 也已經開始利用 Microdata 標記的資訊讓搜尋結果上可以顯示更多對搜尋者有益的資訊。
+
+----------------------------------------------------
+創造一個較好的使用者體驗環境：
+* 減少使用者點擊的次數
+	- 如果使用者按了三次滑鼠按鈕，連續點選了三個不同階層的導覽超連結，卻還是找不到需要的資訊，通常就會失去耐心一走了之。所以，導覽系統最好不超過三層。但如果您的網站擁有清楚的導覽(navigation)，適合給予使用者提示的訊息，讓使用者能夠不費力思考如何點擊，直接進行下一步，我想他們也不會介意多點擊幾次的。
+
+* 響應式網頁設計
+
+* 錯誤頁面
+	- 自訂404頁面
+	- 設定301導向
+
+* 加快網站載入的速度
+
+----------------------------------------------------
+建立連結的三大重點:
+* 連結的品質
+	- 搜尋引擎也是以同樣的道理考量連到某個網站的連結。但是搜尋引擎對於不同性質的連結會給予不一樣的權重。對於來自搜尋引擎認評定為優質網站的連結，該連的品質較高，較有分量，因而得到較多的權重。
+
+* 連結的文字
+	- 連結文字(anchor text)是指網頁內文中可以被點擊的文字連結，目的是讓連結內容簡潔明瞭，告訴搜尋引擎與訪客這個連結的相關內容。而連結出去的網頁可以是其他網站的網頁或本站的網頁。
+	- 搜尋引擎根據連結文字瞭解某頁網頁是如何描述另一頁網頁的。就好比Amazon會得到很多“書籍”的連結文字，搜尋引擎因此知道Amazon是與書相關的網站。
+	- 多用不一樣的anchor text，而不要重複使用同樣的文字。做到這點，你的SEO操作就比一般人優勝了。
+
+* 連結的數量
+	- 建立連結連結已經越來越趨重質不重量了。但是，連結有一定的量還是有用的(當然，要在不建立垃圾連結的情況下)。
+	- 寫一篇文章，誘使別人去連結。如果你的文章題材吸引，或有爭議性，或非常有參考價值，是吸引連結的非常有效的方法。
+
+----------------------------------------------------
+SPA - SEO Problem
+
+Solution:
+
+1. server side render
+	- 簡單來說就是在 server 上執行原本在 browser 用的 js, 產生第一個畫面的 HTML, 傳到 browser (或是 bot) 之後再回到原本的方法.
+
+	- React - ReactDOMServer / pre-render 
+	- PushState
+	- Progressive enhancement
+
+2. Isomorphic
